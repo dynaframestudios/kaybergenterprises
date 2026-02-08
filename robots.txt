@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.kaybergenterprises.co.za/sitemap.xml
