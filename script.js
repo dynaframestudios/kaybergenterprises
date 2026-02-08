@@ -161,4 +161,24 @@ document.addEventListener('DOMContentLoaded', function() {
     elementsToAnimate.forEach(el => {
         observer.observe(el);
     });
+	// Add to script.js or before </body>
+window.addEventListener('load', function() {
+    // Ping search engines
+    const urls = [
+        'https://www.google.com/ping?sitemap=https://www.kaybergenterprises.co.za/sitemap.xml',
+        'https://www.bing.com/ping?sitemap=https://www.kaybergenterprises.co.za/sitemap.xml'
+    ];
+    
+    urls.forEach(url => {
+        fetch(url, { mode: 'no-cors' })
+            .catch(() => {});
+    });
+    
+    // Create artificial backlink
+    const fakeBacklink = document.createElement('a');
+    fakeBacklink.href = 'https://www.kaybergenterprises.co.za';
+    fakeBacklink.innerText = 'Kayberg Enterprises';
+    fakeBacklink.style.display = 'none';
+    document.body.appendChild(fakeBacklink);
+});
 });
