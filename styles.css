@@ -27,6 +27,34 @@ body {
     padding: 0 20px;
 }
 
+/* ===== LOGO FIX ===== */
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--chelsea-blue);
+    flex-shrink: 0;
+}
+
+.logo-link img {
+    height: 50px; /* Fixed height */
+    width: auto;
+    max-width: 50px;
+    border-radius: 5px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-text {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+
+.logo-text span {
+    color: var(--chelsea-blue);
+}
+
 /* Top Bar */
 .top-bar {
     background: var(--chelsea-blue);
@@ -78,28 +106,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo-link {
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
-    text-decoration: none;
-    color: var(--chelsea-blue);
-}
-
-.logo-link img {
-    height: 40px;
-    border-radius: 5px;
-}
-
-.logo-text {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-}
-
-.logo-text span {
-    color: var(--chelsea-blue);
 }
 
 .nav-links {
@@ -394,46 +402,6 @@ body {
     }
     
     .nav-links {
-        display: none; /* Keep this if you want mobile menu */
-    }
-    
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-	
-/* All your regular CSS here... */
-
-/* ===== LOGO FIX ===== */
-.logo-link img {
-    height: 50px;
-    width: auto;
-    max-width: 50px;
-    border-radius: 5px;
-    object-fit: contain;
-    display: block;
-}
-
-.logo-link {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-decoration: none;
-    color: var(--chelsea-blue);
-    flex-shrink: 0;
-}
-
-/* Then your media queries below */
-@media (max-width: 768px) {
-    /* Keep everything else here but REMOVE the logo fix from inside */
-    .contact-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .nav-links {
         display: none;
     }
     
@@ -441,9 +409,16 @@ body {
         font-size: 1.8rem;
     }
     
-    /* Optional mobile logo sizing */
+    /* Mobile logo sizing */
     .logo-link img {
         height: 40px;
         max-width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-link img {
+        height: 35px;
+        max-width: 35px;
     }
 }
