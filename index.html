@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kayberg Enterprises Pty Ltd | Industrial Gas Supplier Johannesburg | Oxygen, Nitrogen, Argon Suppliers South Africa</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Kayberg Enterprises Pty Ltd - Your trusted industrial gas supplier in Johannesburg, Gauteng. We supply high-purity oxygen, nitrogen, argon, acetylene, CO2, welding gases & specialty gases. Delivery across South Africa. Call +27 83 225 8839.">
-  <meta name="keywords" content="Kayberg Enterprises, industrial gas supplier Johannesburg, oxygen gas South Africa, nitrogen suppliers, argon gas, welding gases Gauteng">
-  <link rel="canonical" href="https://www.kaybergenterprises.co.za">
-  
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayberg Enterprises Pty Ltd | Industrial Gas Supplier Johannesburg</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Kayberg Enterprises - Industrial gas supplier in Johannesburg. Oxygen, nitrogen, argon, acetylene, CO2, welding gases. Call 083 225 8839">
+    
+    <!-- Styles & Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+    
+    <style>
+        /* Inline critical CSS */
+        :root {
+            --neon-blue: #00ffff;
+            --dark-bg: #0a0a16;
+            --darker-bg: #050510;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg);
+            color: white;
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -27,16 +48,15 @@
                 <div class="contact-info">
                     <a href="tel:+27832258839">
                         <i class="fas fa-phone"></i>
-                        <span>Call Now: +27 83 225 8839</span>
+                        <span>Call: 083 225 8839</span>
                     </a>
                     <a href="mailto:info@kaybergenterprises.co.za">
                         <i class="fas fa-envelope"></i>
-                        <span>Email: info@kaybergenterprises.co.za</span>
+                        <span>info@kaybergenterprises.co.za</span>
                     </a>
                 </div>
                 <a href="#contact" class="top-contact-btn">
-                    <i class="fas fa-paper-plane"></i>
-                    Get Gas Quote
+                    <i class="fas fa-quote-right"></i> Get Quote
                 </a>
             </div>
         </div>
@@ -46,33 +66,32 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <a href="#" class="logo-link">
-                    <img src="images/logo.jpeg" alt="Kayberg Enterprises Logo">
-                    <div class="logo-text">
-                        <strong>Kayberg<span>Enterprises</span></strong>
-                    </div>
+                <a href="/" class="logo">
+                    <img src="images/logo.jpeg" alt="Kayberg Enterprises" height="40">
+                    <span class="logo-text">Kayberg<span>Enterprises</span></span>
                 </a>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Industrial Gases</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#products">Gases</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Industrial Gas Supplier in South Africa | Oxygen, Nitrogen & Argon Gas Suppliers</h1>
-                <p class="hero-subtitle"><strong>Kayberg Enterprises Pty Ltd</strong> is your trusted industrial gas supplier in Johannesburg, Gauteng. We provide high-purity <strong>oxygen gas</strong>, <strong>nitrogen gas</strong>, <strong>argon gas</strong>, <strong>acetylene welding gases</strong>, <strong>CO2</strong>, and specialty gases for industrial, medical, and commercial applications across South Africa.</p>
-                
-                <div class="hero-buttons">
-                    <a href="#products" class="btn btn-primary">View Industrial Gases</a>
-                    <a href="tel:+27832258839" class="btn btn-primary">
-                        <i class="fas fa-phone"></i> Call Now: 083 225 8839
+                <h1>Industrial Gas Supplier<br><span class="highlight">Johannesburg, Gauteng</span></h1>
+                <p class="subtitle">Kayberg Enterprises supplies high-purity industrial gases including oxygen, nitrogen, argon, acetylene, CO2 and specialty gases across South Africa.</p>
+                <div class="cta-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        <i class="fas fa-wind"></i> View Gases
+                    </a>
+                    <a href="tel:+27832258839" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> Call Now
                     </a>
                 </div>
             </div>
@@ -80,21 +99,18 @@
     </section>
 
     <!-- Products Section -->
-    <section class="products-section" id="products">
+    <section id="products" class="products">
         <div class="container">
-            <div class="section-header">
-                <h2>Industrial Gases We Supply</h2>
-                <p>High-quality industrial, medical, and specialty gases for various applications</p>
-            </div>
+            <h2 class="section-title">Industrial Gases We Supply</h2>
+            <p class="section-subtitle">High-quality gases for manufacturing, healthcare, welding, and research applications</p>
             
             <div class="products-grid">
-                <!-- Product Cards -->
                 <div class="product-card">
                     <div class="product-icon">
                         <i class="fas fa-wind"></i>
                     </div>
                     <h3>Oxygen</h3>
-                    <p>High-purity oxygen gas for medical, industrial, and welding applications.</p>
+                    <p>Medical & industrial oxygen gas in cylinders and bulk supply.</p>
                 </div>
                 
                 <div class="product-card">
@@ -102,7 +118,7 @@
                         <i class="fas fa-fire"></i>
                     </div>
                     <h3>Acetylene</h3>
-                    <p>Acetylene gas for welding and metal cutting applications.</p>
+                    <p>Welding and cutting gas for metal fabrication.</p>
                 </div>
                 
                 <div class="product-card">
@@ -110,7 +126,7 @@
                         <i class="fas fa-snowflake"></i>
                     </div>
                     <h3>Nitrogen</h3>
-                    <p>Nitrogen gas for blanketing, purging, food packaging, and industrial applications.</p>
+                    <p>Industrial nitrogen for food packaging and inerting.</p>
                 </div>
                 
                 <div class="product-card">
@@ -118,60 +134,59 @@
                         <i class="fas fa-tint"></i>
                     </div>
                     <h3>Argon</h3>
-                    <p>Argon shielding gas for welding applications and industrial processes.</p>
+                    <p>Shielding gas for welding and industrial processes.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section" id="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2>Contact Kayberg Enterprises</h2>
-                <p>Get quotes, product information, or technical support for industrial gases</p>
-            </div>
+            <h2 class="section-title">Contact Kayberg Enterprises</h2>
+            <p class="section-subtitle">Get quotes or technical support for industrial gases</p>
             
-            <div class="contact-content">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
                 <div class="contact-info">
-                    <h3>Contact Details</h3>
-                    <p>Contact Kayberg Enterprises for all your industrial gas needs in Gauteng.</p>
+                    <h3><i class="fas fa-info-circle"></i> Contact Details</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>253 Langkloof Street, Albertsdal<br>Alberton, 1448<br>Johannesburg, Gauteng</p>
+                        </div>
+                    </div>
                     
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Location</h4>
-                                <p>253 Langkloof Street, Albertsdal<br>Alberton, 1448<br>Johannesburg, Gauteng</p>
-                            </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><strong>083 225 8839</strong></p>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4>Phone</h4>
-                                <p><strong>+27 83 225 8839</strong></p>
-                            </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><strong>info@kaybergenterprises.co.za</strong></p>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4>Email</h4>
-                                <p><strong>info@kaybergenterprises.co.za</strong></p>
-                            </div>
-                        </div>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h4><i class="fas fa-clock"></i> Business Hours</h4>
+                        <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                        <p>Sat: 9:00 AM - 2:00 PM</p>
+                        <p>Sun: Closed</p>
                     </div>
                 </div>
                 
-                <!-- WORKING CONTACT FORM (NO JAVASCRIPT) -->
+                <!-- Contact Form - SIMPLE & WORKING -->
                 <div class="contact-form">
+                    <h3><i class="fas fa-paper-plane"></i> Send Enquiry</h3>
+                    
+                    <!-- SIMPLE FORM THAT WORKS -->
                     <form action="https://formsubmit.co/info@kaybergenterprises.co.za" method="POST">
                         <!-- FormSubmit Configuration -->
                         <input type="hidden" name="_subject" value="Industrial Gas Enquiry - Kayberg Enterprises">
@@ -179,14 +194,16 @@
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://kaybergenterprises.co.za/thank-you.html">
                         
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="Your Name">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company">Company / Organization</label>
-                            <input type="text" id="company" name="company" placeholder="Your Company">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="083 225 8839">
+                            </div>
                         </div>
                         
                         <div class="form-group">
@@ -195,53 +212,30 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="083 225 8839">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="location">Location / Area</label>
-                            <select id="location" name="location">
-                                <option value="">Select Area</option>
-                                <option value="johannesburg">Johannesburg</option>
-                                <option value="alberton">Alberton</option>
-                                <option value="sandton">Sandton</option>
-                                <option value="pretoria">Pretoria</option>
-                                <option value="gauteng">Other Gauteng</option>
-                                <option value="other-sa">Other South Africa</option>
+                            <label for="gas-type">Gas Interest *</label>
+                            <select id="gas-type" name="gas_type" required>
+                                <option value="">Select gas type</option>
+                                <option value="oxygen">Oxygen</option>
+                                <option value="nitrogen">Nitrogen</option>
+                                <option value="argon">Argon</option>
+                                <option value="acetylene">Acetylene</option>
+                                <option value="co2">CO2</option>
+                                <option value="other">Other/Specialty</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
-                            <label for="productInterest">Industrial Gas Interest *</label>
-                            <select id="productInterest" name="productInterest" required>
-                                <option value="">Select Gas Type</option>
-                                <option value="oxygen">Oxygen Gas</option>
-                                <option value="nitrogen">Nitrogen Gas</option>
-                                <option value="argon">Argon Gas</option>
-                                <option value="acetylene">Acetylene Welding Gas</option>
-                                <option value="co2">Carbon Dioxide (CO2)</option>
-                                <option value="helium">Helium Gas</option>
-                                <option value="welding-mixtures">Welding Gas Mixtures</option>
-                                <option value="specialty">Specialty Gases</option>
-                                <option value="medical">Medical Gases</option>
-                                <option value="multiple">Multiple Gas Types</option>
-                            </select>
+                            <label for="message">Requirements *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Describe your gas requirements, volume needed, and application..."></textarea>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="message">Gas Requirements *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Please describe your industrial gas requirements..."></textarea>
-                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Enquiry
+                        </button>
                         
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane"></i> Request Gas Quote
-                            </button>
-                            <p class="form-note">
-                                <i class="fas fa-shield-alt"></i> Secure form submission
-                            </p>
-                        </div>
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i> Your information is secure. We respond within 24 hours.
+                        </p>
                     </form>
                 </div>
             </div>
@@ -252,31 +246,27 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#" class="logo-link">
-                        <img src="images/logo.jpeg" alt="Kayberg Enterprises Logo">
-                        <div class="logo-text">
-                            <strong>Kayberg<span>Enterprises</span></strong>
-                        </div>
-                    </a>
-                    <p>Industrial gas supplier in Johannesburg, Gauteng.</p>
-                    <p>Company Registration: 2017/246605/07</p>
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpeg" alt="Kayberg Enterprises" height="40">
+                        <h3>Kayberg Enterprises</h3>
+                    </div>
+                    <p>Industrial gas supplier serving Johannesburg and across South Africa.</p>
+                    <p>Registration: 2017/246605/07</p>
                 </div>
                 
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#products">Industrial Gases</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> 253 Langkloof Street, Albertsdal, Alberton, 1448</p>
-                    <p><i class="fas fa-phone"></i> +27 83 225 8839</p>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Alberton, Johannesburg</p>
+                    <p><i class="fas fa-phone"></i> 083 225 8839</p>
                     <p><i class="fas fa-envelope"></i> info@kaybergenterprises.co.za</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#products">Industrial Gases</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
             
@@ -287,7 +277,7 @@
         </div>
     </footer>
 
-    <!-- SIMPLE SCRIPT.JS (Only basic functionality) -->
+    <!-- Simple Script -->
     <script src="script.js"></script>
 </body>
 </html>
