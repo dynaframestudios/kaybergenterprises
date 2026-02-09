@@ -400,4 +400,50 @@ body {
     .hero h1 {
         font-size: 1.8rem;
     }
+	
+/* ===== LOGO FIX ===== */
+
+/* Fix for logo image size */
+.logo-link img {
+    height: 50px; /* Fixed height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 50px; /* Prevent overflow */
+    border-radius: 5px;
+    object-fit: contain; /* Ensure image fits properly */
+    display: block; /* Remove inline spacing issues */
+}
+
+/* Optional: Add max-width for mobile */
+@media (max-width: 768px) {
+    .logo-link img {
+        height: 40px;
+        max-width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-link img {
+        height: 35px;
+        max-width: 35px;
+    }
+}
+
+/* Ensure logo container doesn't overflow */
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--chelsea-blue);
+    flex-shrink: 0; /* Prevent shrinking too much */
+}
+
+/* If you still have issues, add this to ensure the navbar doesn't break */
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on mobile */
+    gap: 15px; /* Add gap for mobile spacing */
+}	
 }
