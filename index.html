@@ -481,77 +481,79 @@
                     </div>
                 </div>
                 
-                <div class="contact-form">
-                    <form id="contactForm" action="https://formsubmit.co/info@kaybergenterprises.co.za" method="POST">
-                        <input type="hidden" name="_subject" value="Industrial Gas Enquiry - Kayberg Enterprises">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
-                        
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="Your Name">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company">Company / Organization</label>
-                            <input type="text" id="company" name="company" placeholder="Your Company">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required placeholder="your.email@company.com">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="083 225 8839">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="location">Location / Area</label>
-                            <select id="location" name="location">
-                                <option value="">Select Area</option>
-                                <option value="johannesburg">Johannesburg</option>
-                                <option value="alberton">Alberton</option>
-                                <option value="sandton">Sandton</option>
-                                <option value="pretoria">Pretoria</option>
-                                <option value="gauteng">Other Gauteng</option>
-                                <option value="other-sa">Other South Africa</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="productInterest">Industrial Gas Interest *</label>
-                            <select id="productInterest" name="productInterest" required>
-                                <option value="">Select Gas Type</option>
-                                <option value="oxygen">Oxygen Gas</option>
-                                <option value="nitrogen">Nitrogen Gas</option>
-                                <option value="argon">Argon Gas</option>
-                                <option value="acetylene">Acetylene Welding Gas</option>
-                                <option value="co2">Carbon Dioxide (CO2)</option>
-                                <option value="helium">Helium Gas</option>
-                                <option value="welding-mixtures">Welding Gas Mixtures</option>
-                                <option value="specialty">Specialty Gases</option>
-                                <option value="medical">Medical Gases</option>
-                                <option value="multiple">Multiple Gas Types</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Gas Requirements *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Please describe your industrial gas requirements, volume needed, and any specific applications..."></textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane"></i> Request Gas Quote
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+               <div class="contact-form">
+    <!-- CHANGE THIS EMAIL TO YOUR REAL EMAIL -->
+    <form id="contactForm" action="https://formsubmit.co/info@kaybergenterprises.co.za" method="POST">
+        <input type="hidden" name="_subject" value="Industrial Gas Enquiry - Kayberg Enterprises">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- ADD THIS LINE TO REDIRECT AFTER SUBMIT -->
+        <input type="hidden" name="_next" value="https://www.kaybergenterprises.co.za/thank-you.html">
+        <!-- ADD THIS FOR BETTER DELIVERY -->
+        <input type="hidden" name="_autoresponse" value="Thank you for contacting Kayberg Enterprises. We'll respond within 24 hours.">
+        
+        <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
         </div>
-    </section>
+        
+        <div class="form-group">
+            <label for="company">Company / Organization</label>
+            <input type="text" id="company" name="company" placeholder="Your Company">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@company.com">
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="083 225 8839">
+        </div>
+        
+        <div class="form-group">
+            <label for="location">Location / Area</label>
+            <select id="location" name="location">
+                <option value="">Select Area</option>
+                <option value="johannesburg">Johannesburg</option>
+                <option value="alberton">Alberton</option>
+                <option value="sandton">Sandton</option>
+                <option value="pretoria">Pretoria</option>
+                <option value="gauteng">Other Gauteng</option>
+                <option value="other-sa">Other South Africa</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="productInterest">Industrial Gas Interest *</label>
+            <select id="productInterest" name="productInterest" required>
+                <option value="">Select Gas Type</option>
+                <option value="oxygen">Oxygen Gas</option>
+                <option value="nitrogen">Nitrogen Gas</option>
+                <option value="argon">Argon Gas</option>
+                <option value="acetylene">Acetylene Welding Gas</option>
+                <option value="co2">Carbon Dioxide (CO2)</option>
+                <option value="helium">Helium Gas</option>
+                <option value="welding-mixtures">Welding Gas Mixtures</option>
+                <option value="specialty">Specialty Gases</option>
+                <option value="medical">Medical Gases</option>
+                <option value="multiple">Multiple Gas Types</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Gas Requirements *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Please describe your industrial gas requirements, volume needed, and any specific applications..."></textarea>
+        </div>
+        
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Request Gas Quote
+            </button>
+        </div>
+    </form>
+</div>
 
     <!-- FOOTER WITH SEO CONTENT -->
     <footer class="footer">
